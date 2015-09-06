@@ -231,14 +231,6 @@ p {
        color: rgba(115,176,214, 0.6);
     }
 
-    .formcontrol:-moz-placeholder { /* Firefox 18- */
-       font-size: 1.55rem;
-       text-align: center;
-       top: 5.75rem;
-       position: relative;  
-       color: rgba(115,176,214, 0.6);
-    }
-
     .formcontrol::-moz-placeholder {  /* Firefox 19+ */
        font-size: 1.55rem;
        text-align: center;
@@ -246,15 +238,6 @@ p {
        position: relative;  
        color: rgba(115,176,214, 0.6);
     }
-
-    .formcontrol:-ms-input-placeholder {  
-       font-size: 1.55rem;
-       text-align: center;
-       top: 5.75rem;
-       position: relative;  
-       color: rgba(115,176,214, 0.6);
-    }
-
 }
 
 .siteFooter {
