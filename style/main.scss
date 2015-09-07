@@ -24,7 +24,11 @@ body {
     background: $sky-blue;
     color: #fff;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: $font-family-gotham;
     font-weight: 400;
     font-style: normal;
@@ -88,7 +92,8 @@ p {
     background: rgba(255, 74, 74, 1);
     padding: 1rem;
     text-align: center;
-    transition: background 1s linear;
+    -webkit-transition: background 1s linear;
+            transition: background 1s linear;
 
     &.done {
         background: rgba(39, 106, 142, 0.1);
@@ -109,6 +114,37 @@ p {
     @media (min-width: $medium-screen-min) {
         font-size: 1.5rem;
     }
+}
+
+@-webkit-keyframes pulseSize {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  10% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  30% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
+  40% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    text-transform: uppercase; }
+  75% {
+    text-transform: none; }
+  100% {
+    opacity: 1;
+    margin-right: 0;
+    text-transform: none; } 
 }
 
 @keyframes pulseSize {
@@ -141,18 +177,28 @@ p {
 }
 
 .screamyText {
-    animation: pulseSize 4s forwards;
+    -webkit-animation: pulseSize 4s forwards;
+            animation: pulseSize 4s forwards;
     text-transform: uppercase;
-    transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
     display: inline-block;
 }
 
 .grid {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: column;
 
     @media only screen and (min-width: $medium-screen-min) {
-        flex-direction: row;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
     } 
 }
 
@@ -241,30 +287,69 @@ p {
     }
 }
 
-@keyframes cloudMove {
+@-webkit-keyframes cloudMove {
     0% {
-        transform: translate(-10vw, -25px);
+        -webkit-transform: translate(-10vw, -25px);
+                transform: translate(-10vw, -25px);
     }
     100% {
-        transform: translate(110vw, -25px);
+        -webkit-transform: translate(110vw, -25px);
+                transform: translate(110vw, -25px);
+    }
+}
+
+@keyframes cloudMove {
+    0% {
+        -webkit-transform: translate(-10vw, -25px);
+                transform: translate(-10vw, -25px);
+    }
+    100% {
+        -webkit-transform: translate(110vw, -25px);
+                transform: translate(110vw, -25px);
+    }
+}
+
+@-webkit-keyframes cloudMoveTwo {
+    0% {
+        -webkit-transform: translate(-10vw, 250px);
+                transform: translate(-10vw, 250px);
+    }
+    100% {
+        -webkit-transform: translate(110vw, 250px);
+                transform: translate(110vw, 250px);
     }
 }
 
 @keyframes cloudMoveTwo {
     0% {
-        transform: translate(-10vw, 250px);
+        -webkit-transform: translate(-10vw, 250px);
+                transform: translate(-10vw, 250px);
     }
     100% {
-        transform: translate(110vw, 250px);
+        -webkit-transform: translate(110vw, 250px);
+                transform: translate(110vw, 250px);
+    }
+}
+
+@-webkit-keyframes cloudMoveThree {
+    0% {
+        -webkit-transform: translate(-10vw, 125px);
+                transform: translate(-10vw, 125px);
+    }
+    100% {
+        -webkit-transform: translate(110vw, 125px);
+                transform: translate(110vw, 125px);
     }
 }
 
 @keyframes cloudMoveThree {
     0% {
-        transform: translate(-10vw, 125px);
+        -webkit-transform: translate(-10vw, 125px);
+                transform: translate(-10vw, 125px);
     }
     100% {
-        transform: translate(110vw, 125px);
+        -webkit-transform: translate(110vw, 125px);
+                transform: translate(110vw, 125px);
     }
 }
 
@@ -273,16 +358,21 @@ p {
     height: 200px;
     left: 0;
     position: fixed;
-    transform: translateX(-100%);
-    animation: cloudMove 50s 6s infinite linear;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-animation: cloudMove 50s 6s infinite linear;
+            animation: cloudMove 50s 6s infinite linear;
     z-index: -1;
 
     &.two {
-        animation: cloudMoveTwo 49s 18s infinite linear;
+        -webkit-animation: cloudMoveTwo 49s 18s infinite linear;
+                animation: cloudMoveTwo 49s 18s infinite linear;
     }
 
     &.three {
-        animation: cloudMoveThree 50s 30s infinite linear;
+        -webkit-animation: cloudMoveThree 50s 30s infinite linear;
+                animation: cloudMoveThree 50s 30s infinite linear;
     }
 } 
 
