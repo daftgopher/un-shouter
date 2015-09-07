@@ -32,6 +32,10 @@
             var animationEndListeners = ['animationend', 'webkitAnimationEnd', 'oAnimationEnd', 'MSAnimationEnd'];
             animationEndListeners.forEach(function(listener){
                 screamyText.addEventListener(listener, function(){
+                    screamyText.classList.add('done');
+                    window.setTimeout(function(){
+                        screamyText.classList.add('fadeIn');
+                    }, 10);
                     if (header.classList){
                         header.classList.add('done');
                     } else {
