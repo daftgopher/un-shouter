@@ -117,34 +117,33 @@ p {
 }
 
 @-webkit-keyframes pulseSize {
-  0% {
+    0% {
     opacity: 1;
     -webkit-transform: scale(1);
-            transform: scale(1); }
-  10% {
+            transform: scale(1); 
+    }
+    20% {
     -webkit-transform: scale(1.15);
-            transform: scale(1.15); }
-  20% {
+            transform: scale(1.15);
+    }
+    40% {
     -webkit-transform: scale(1);
-            transform: scale(1); }
-  30% {
+            transform: scale(1);
+    }
+    60% {
     -webkit-transform: scale(1.15);
-            transform: scale(1.15); }
-  40% {
+            transform: scale(1.15);
+    }
+    80% {
     opacity: 1;
     -webkit-transform: scale(1);
-            transform: scale(1); }
-  50% {
+            transform: scale(1);
+    }
+    100% {
     opacity: 0;
     -webkit-transform: scale(1);
             transform: scale(1);
-    text-transform: uppercase; }
-  75% {
-    text-transform: none; }
-  100% {
-    opacity: 1;
-    margin-right: 0;
-    text-transform: none; } 
+    }
 }
 
 @keyframes pulseSize {
@@ -295,67 +294,67 @@ p {
 
 @-webkit-keyframes cloudMove {
     0% {
-        -webkit-transform: translate(-10vw, -25px);
-                transform: translate(-10vw, -25px);
+        -webkit-transform: translate(-10vw, 5vh);
+                transform: translate(-10vw, 5vh);
     }
     100% {
-        -webkit-transform: translate(110vw, -25px);
-                transform: translate(110vw, -25px);
+        -webkit-transform: translate(110vw, 5vh);
+                transform: translate(110vw, 5vh);
     }
 }
 
 @keyframes cloudMove {
     0% {
-        -webkit-transform: translate(-10vw, -25px);
-                transform: translate(-10vw, -25px);
+        -webkit-transform: translate(-10vw, 5vh);
+                transform: translate(-10vw, 5vh);
     }
     100% {
-        -webkit-transform: translate(110vw, -25px);
-                transform: translate(110vw, -25px);
+        -webkit-transform: translate(110vw, 5vh);
+                transform: translate(110vw, 5vh);
     }
 }
 
 @-webkit-keyframes cloudMoveTwo {
     0% {
-        -webkit-transform: translate(-10vw, 250px);
-                transform: translate(-10vw, 250px);
+        -webkit-transform: translate(-10vw, 60vh);
+                transform: translate(-10vw, 60vh);
     }
     100% {
-        -webkit-transform: translate(110vw, 250px);
-                transform: translate(110vw, 250px);
+        -webkit-transform: translate(110vw, 60vh);
+                transform: translate(110vw, 60vh);
     }
 }
 
 @keyframes cloudMoveTwo {
     0% {
-        -webkit-transform: translate(-10vw, 250px);
-                transform: translate(-10vw, 250px);
+        -webkit-transform: translate(-10vw, 60vh);
+                transform: translate(-10vw, 60vh);
     }
     100% {
-        -webkit-transform: translate(110vw, 250px);
-                transform: translate(110vw, 250px);
+        -webkit-transform: translate(110vw, 60vh);
+                transform: translate(110vw, 60vh);
     }
 }
 
 @-webkit-keyframes cloudMoveThree {
     0% {
-        -webkit-transform: translate(-10vw, 125px);
-                transform: translate(-10vw, 125px);
+        -webkit-transform: translate(-10vw, 35vh);
+                transform: translate(-10vw, 35vh);
     }
     100% {
-        -webkit-transform: translate(110vw, 125px);
-                transform: translate(110vw, 125px);
+        -webkit-transform: translate(110vw, 35vh);
+                transform: translate(110vw, 35vh);
     }
 }
 
 @keyframes cloudMoveThree {
     0% {
-        -webkit-transform: translate(-10vw, 125px);
-                transform: translate(-10vw, 125px);
+        -webkit-transform: translate(-10vw, 35vh);
+                transform: translate(-10vw, 35vh);
     }
     100% {
-        -webkit-transform: translate(110vw, 125px);
-                transform: translate(110vw, 125px);
+        -webkit-transform: translate(110vw, 35vh);
+                transform: translate(110vw, 35vh);
     }
 }
 
@@ -363,6 +362,7 @@ p {
     width: 200px;
     height: 200px;
     left: 0;
+    top: 0;
     position: fixed;
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
