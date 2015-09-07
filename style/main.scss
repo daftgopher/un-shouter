@@ -359,8 +359,8 @@ p {
 }
 
 .cloud {
-    width: 200px;
-    height: 200px;
+    width: 8em;
+    height: 8em;
     left: 0;
     top: 0;
     position: fixed;
@@ -379,6 +379,16 @@ p {
     &.three {
         -webkit-animation: cloudMoveThree 50s 28s infinite linear;
                 animation: cloudMoveThree 50s 28s infinite linear;
+    }
+
+    @media only screen and (min-width: $small-screen-min) {
+        width: 10em;
+        height: 10em;
+    }
+
+    @media only screen and (min-width: $medium-screen-min) {
+        width: 200px;
+        height: 200px;
     }
 } 
 
