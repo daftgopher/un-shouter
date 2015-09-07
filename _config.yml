@@ -3,5 +3,4 @@ description: >
     Converts ALLCAPS text to properly formatted sentence-case text.
 baseurl: ""
 
-gems:
-  - octopress-autoprefixer
+gems: ["octopress-autoprefixer", "github-pages"]
