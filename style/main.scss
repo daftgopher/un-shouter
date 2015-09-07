@@ -367,18 +367,18 @@ p {
     -webkit-transform: translateX(-100%);
         -ms-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-animation: cloudMove 50s 6s infinite linear;
-            animation: cloudMove 50s 6s infinite linear;
+    -webkit-animation: cloudMove 50s 4s infinite linear;
+            animation: cloudMove 50s 4s infinite linear;
     z-index: -1;
 
     &.two {
-        -webkit-animation: cloudMoveTwo 49s 18s infinite linear;
-                animation: cloudMoveTwo 49s 18s infinite linear;
+        -webkit-animation: cloudMoveTwo 49s 16s infinite linear;
+                animation: cloudMoveTwo 49s 16s infinite linear;
     }
 
     &.three {
-        -webkit-animation: cloudMoveThree 50s 30s infinite linear;
-                animation: cloudMoveThree 50s 30s infinite linear;
+        -webkit-animation: cloudMoveThree 50s 28s infinite linear;
+                animation: cloudMoveThree 50s 28s infinite linear;
     }
 } 
 

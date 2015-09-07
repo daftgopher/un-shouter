@@ -10,6 +10,7 @@
     <meta property="og:description" content="Conversion tool for changing obnoxious, shouty ALLCAPS TEXT into a pleasing, sentence-cased tone. Maintains proper capitalization for sentences and first-person pronouns." />
     <meta property="og:url" content="http://unshouter.com" />
     <meta property="og:image" content="http://unshouter.com/image/unshouter_banner.jpg" />
+    <meta property="og:image:url" content="http://unshouter.com/image/unshouter_banner.jpg" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/767618/761868/css/fonts.css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/style/normalize.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/style/main.css">
@@ -36,11 +37,9 @@
                     window.setTimeout(function(){
                         screamyText.classList.add('fadeIn');
                     }, 10);
-                    if (header.classList){
+                    window.setTimeout(function(){
                         header.classList.add('done');
-                    } else {
-                        header.className += ' done';
-                    }
+                    }, 1000)
                 });
             });
         </script>
