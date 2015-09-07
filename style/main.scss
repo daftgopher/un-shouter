@@ -141,9 +141,9 @@ p {
 }
 
 .screamyText {
-    animation: pulseSize 4s forwards;
+    // animation: pulseSize 4s forwards;
     text-transform: uppercase;
-    transform-origin: bottom;
+    // transform-origin: bottom;
     display: inline-block;
 }
 
@@ -290,6 +290,6 @@ ul {
     padding-left: 25px;
 
     @media only screen and (min-width: $medium-screen-min) {
-        padding-left: 50px;
+        padding-left: 40px;
     }
 }
