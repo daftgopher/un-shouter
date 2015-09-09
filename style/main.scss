@@ -399,3 +399,43 @@ ul {
         padding-left: 40px;
     }
 }
+
+.ie-modalBg {
+    background: #333;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.ie-popup {
+    background: #fff;
+    border-radius: 5px;
+    border: 3px solid $sky-blue;
+    color: #333;
+    position: fixed;
+    padding: 25px;
+    text-align: center;
+    z-index: 20;
+    width: 700px;
+    height: 350px;
+    margin-top: -175px;
+    margin-left: -350px;
+    top: 50%;
+    left: 50%;
+}
+
+.ie-button {
+    background: blue;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+p.left {
+    text-align: left;
+}
